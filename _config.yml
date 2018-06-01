@@ -1,0 +1,13 @@
+title: Fast jekyll theme
+description: High Performance
+version: 1.0.0
+sass:
+  style: compressed
+kramdown:
+  input: GFM
+defaults:
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "page"
