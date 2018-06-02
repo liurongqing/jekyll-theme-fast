@@ -109,3 +109,14 @@ footer {
 .markdown-body pre {
     background-color: inherit;
 }
+
+@media screen and(max-width: 1000px) {
+    nav {
+        display: none;
+    }
+    section {
+        width: 80vw;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
