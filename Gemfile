@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'gemoji'
+gem 'jemoji'
 gemspec
