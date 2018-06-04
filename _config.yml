@@ -4,6 +4,8 @@ sass:
   style: compressed
 kramdown:
   input: GFM
+plugins:
+  - jemoji
 defaults:
   -
     scope:
