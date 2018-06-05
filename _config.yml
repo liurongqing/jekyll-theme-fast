@@ -1,5 +1,4 @@
 title: Fast jekyll theme
-version: 1.0.0
 sass:
   style: compressed
 kramdown:
