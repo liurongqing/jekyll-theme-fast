@@ -109,9 +109,14 @@ footer {
 }
 
 // 覆盖 github-markdown 样式
-.markdown-body .highlight pre,
-.markdown-body pre {
-    background-color: inherit;
+.markdown-body {
+    .highlight pre,
+    pre {
+        background-color: inherit;
+    }
+    img {
+        background-color: inherit;
+    }
 }
 
 @media screen and(max-width: 1000px) {
