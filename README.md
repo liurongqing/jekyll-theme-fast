@@ -68,15 +68,3 @@ http://127.0.0.0:4000
     rougify style syntax.monokai > syntax.monokai.css # 生成一个主题
    ```
 
-
-
-### 计划清单（暂未实现的功能）
-
-- 手机、ipad 适配
-- url permalink 改
-- 添加标签云
-- 显示日期格式
-- excerpt_separator 查看更多
-- 全文搜索
-- 自动生成 mapsite.xml
-- rouge 编辑主题选择
