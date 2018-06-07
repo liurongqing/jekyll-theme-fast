@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
     s.name     = 'jekyll-theme-fast'
-    s.version  = '0.1.9'
+    s.version  = '0.2.0'
     s.license  = 'MIT'
     s.summary  = 'High Performance Web Sites'
     s.author   = 'liurongqing'

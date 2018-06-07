@@ -37,6 +37,8 @@ nav {
     left: 50%;
     z-index: 99;
     margin-left: calc(66vw * .5 + 30px - 100px);
+    height: calc(100vh - 100px);
+    overflow: scroll;
     div {
         padding-left: 12px;
         margin-bottom: 10px;
@@ -116,6 +118,8 @@ footer {
     }
     img {
         background-color: inherit;
+        vertical-align: middle;
+        margin-top: -4px;
     }
 }
 
