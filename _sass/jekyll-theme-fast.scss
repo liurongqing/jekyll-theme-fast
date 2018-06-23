@@ -14,9 +14,15 @@ body {
     background: #3d3e45;
 }
 
+body,
+.markdown-body {
+    // font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    font-family: -apple-system, Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STXihei, "Microsoft YaHei", SimHei, "WenQuanYi Micro Hei";
+}
+
 header {
     text-align: center;
-    padding-top: 30px;
+    padding: 16px 0;
     h1 {
         color: #f1f1f1;
         font-size: 1.6em;
@@ -31,9 +37,11 @@ nav {
     left: 50%;
     z-index: 99;
     margin-left: calc(66vw * .5 + 30px - 100px);
+    height: calc(100vh - 100px);
+    overflow: scroll;
     div {
         padding-left: 12px;
-        margin-bottom: 6px;
+        margin-bottom: 10px;
         color: #ffffff;
         a {
             text-decoration: none;
@@ -65,18 +73,21 @@ section {
     position: relative;
     width: 66vw;
     padding: 30px 30px 50px 30px;
-    margin: 30px auto;
+    margin: 0 auto;
     -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
     background: #fbfaf8;
     border-radius: 3px;
-    box-shadow: 0 0 80px rgba(0,0,0,.45);
-    min-height: calc(100vh - 300px); // max-width: 800px;
+    box-shadow: 0 0 80px rgba(0, 0, 0, .45);
+    min-height: calc(100vh - 200px);
     .page-title {
         text-align: center;
         font-size: 20px;
         margin-bottom: 30px;
         color: #bcb2a5;
+    }
+    &.page {
+        margin-top: 30px;
     }
     &.default {
         width: 80vw;
@@ -92,7 +103,7 @@ section {
 
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     color: #bbbbbb;
     a {
         color: #f0f0f0;
@@ -100,12 +111,22 @@ footer {
 }
 
 // 覆盖 github-markdown 样式
-.markdown-body .highlight pre,
-.markdown-body pre {
-    background-color: inherit;
+.markdown-body {
+    .highlight pre,
+    pre {
+        background-color: inherit;
+    }
+    img {
+        background-color: inherit;
+        vertical-align: middle;
+        margin-top: -4px;
+    }
 }
 
 @media screen and(max-width: 1000px) {
+    header {
+        padding: 10px 0;
+    }
     nav {
         display: none;
     }
