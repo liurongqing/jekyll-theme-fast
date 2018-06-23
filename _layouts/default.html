@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{page.title}}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision }}">
-    <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico?v=' | append: site.github.build_revision }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision| prepend: site.github.url }}">
+    <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico?v=' | append: site.github.build_revision| prepend: site.github.url }}">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             {% for post in site.posts %}
             <li>
                 {{ post.date | date_to_string }}
-                <a href="{{ post.url }}">{{ post.title }}</a>
+                <a href="{{ post.url| prepend: site.github.url }}">{{ post.title }}</a>
                 <!-- {{ post.excerpt }} -->
             </li>
             {% endfor %}
