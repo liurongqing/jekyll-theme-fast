@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{page.title}}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | prepend: site.github.url }}">
-    <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico?v=' | append: site.github.build_revision | prepend: site.github.url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision }}">
+    <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico?v=' | append: site.github.build_revision  }}">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 
     {% include footer.html %}
 
-    <script src="{{ '/assets/js/main.js'| prepend: site.github.url }}"></script>
+    <script src="{{ '/assets/js/main.js' }}"></script>
 </body>
 
 </html>
